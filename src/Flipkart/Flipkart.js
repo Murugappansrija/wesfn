@@ -1,5 +1,4 @@
 
-import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
 function Flipkart() {
@@ -30,7 +29,7 @@ const startIndex = (currentPage - 1) * itemsPerPage;
 
   return (
     <div>
-    <h1 style={{color:"#FFFF", padding:"10px"}}>E-Shoping Exclusive</h1>
+    <h1 style={{color:"#FFFF", padding:"10px"}}>Web Scraper</h1>
     <div className='flipkart-container'>
      {currentData.map((data,idx)=>(
         <div className='shop-card-listing'>
@@ -52,7 +51,7 @@ const startIndex = (currentPage - 1) * itemsPerPage;
     ))}
     </div>
     <div className='pagination'>
-        {/* Previous button */}
+      
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
@@ -60,7 +59,7 @@ const startIndex = (currentPage - 1) * itemsPerPage;
           Previous
         </button>
 
-        {/* Page numbers */}
+        
         {currentData.map((_, index) => (
           <button
             key={index}
@@ -71,13 +70,7 @@ const startIndex = (currentPage - 1) * itemsPerPage;
           </button>
         ))}
 
-        {/* Next button */}
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={endIndex >= currentData.length}
-        >
-          Next
-        </button>
+
       </div>
     </div>
   )

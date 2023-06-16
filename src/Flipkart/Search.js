@@ -37,13 +37,13 @@ const Search = () => {
         type="text"
        value={searchInput}
        onChange={handleInputChange}
-        placeholder="Enter your search query"
+        placeholder="Search here"
       />
        <ul className='pagelist'>
         {suggestions.map((suggestion,idx) => (
           <li key={idx} onClick={() => handleSuggestionClick(suggestion)}>
             {suggestion.title.slice(0, 65)}
-            {/* {suggestion.source} */}
+      
           </li>
         ))}
       </ul>

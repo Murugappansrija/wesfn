@@ -5,7 +5,7 @@ function Navbar() {
     <div className='navbar'>
        <div className="brand-container">
         <img
-          src="https://img.favpng.com/19/18/19/logo-e-commerce-electronic-business-png-favpng-eN3uDxqPs3mfprC0GG6u29kJb.jpg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuz0YP4O1KDyw16iJR5lg_0gUDDbOSdLP81SmUcA95Gw&usqp=CAU&ec=48600113"
           alt="logo"
         />
       </div>
